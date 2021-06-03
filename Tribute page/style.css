@@ -1,0 +1,43 @@
+html {
+    background-color: black;
+  }
+  #main{
+    color: white;
+    text-align:center;
+    font-family:'patrick hand';
+    margin: auto auto;
+    padding:25px;
+    font-size:18px;
+    background:black;
+    
+  }
+  #title{
+    font-family:'lobester';
+    font-size: 20px;
+    padding-top:16px;
+    
+  }
+  #image{
+      width: auto;
+      height: auto;
+      max-width: 2000px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+   }
+  #img-div{
+    width:auto;
+    height:auto;
+  /*   max-width:1000px; */
+  }
+  #img-caption{
+    font-size: 24px;
+    color:lightblue;
+  }
+  #tribute-info{
+    text-align:left;
+    padding-bottom:30px;
+  }
+  #tribute-link{
+    color:red;
+  }

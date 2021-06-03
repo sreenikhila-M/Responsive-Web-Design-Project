@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+    <nav id ="navbar">
+        <header> CSS Documentation</header>
+        <a href="#Introduction" class = "nav-link">Introduction</a>
+        <a href="#Key_Resources" class = "nav-link">Key Resources</a>
+        <a href="#USE_CSS" class = "nav-link">USE CSS</a>
+        <a href="#Tutorials" class = "nav-link">Tutorials</a>
+        <a href="#Reference" class = "nav-link">Reference</a>
+        <a href="#cookbook" class = "nav-link">cookbook</a>
+        <a href="#Tools_for_CSS_Development" class = "nav-link">Tools for CSS Development</a>
+        <a href="#Meta_Bugs" class = "nav-link">Meta Bugs</a>
+        <a href="#See_Also" class = "nav-link">See Also</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class ="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p> Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+
+                <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.</p>
+                
+                <p>From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification. </p>
+        </section>
+        <section class = "main-section" id="USE_CSS">
+         <header> USE CSS </header>
+         <p>There are 3 ways to import CSS</p>
+         <ul>
+             <li>Inline CSS</li>
+             <li>Internal CSS</li>
+             <li>External CSS</li>
+        </ul>
+        <h3>Inline CSS</h3>
+        <pre>
+            <code> &lt;button style="color:rgb(63, 219, 63)"&gt;Click it&lt;/button&gt;</code>
+        </pre>
+
+        <h3>Internal CSS</h3>
+        <p>In y0ur HTML file at inside the head tag you shpould put the style tag :</p>
+        <pre>
+         <code>&lt;style&gt;
+                button {
+                    color : rgb(66, 219, 66);
+                         }
+             &lt;/style&gt;</code>
+        </pre>
+        <p> And then you can have a button on your page</p>
+        <pre>
+           <code>
+            &lt;button&gt;Click it&lt;/button&gt;
+           </code>
+        </pre> 
+
+
+        <h3>External CSS</h3>
+        <p>In another CSS file we can have</p>
+        <pre>
+         <code>button {
+                 color : green ;
+            }</code>
+        </pre>
+        <p>and import it into the html using the link tag</p>
+        <pre>
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+        </pre>
+        </section>
+        <section class ="main-section" id="Key_Resources">
+            <header> Key Resources</header>
+            <p> <strong> CSS Introduction</strong></p>
+            <p> If you're new to web development, be sure to read our CSS basics article to learn what CSS is and how to use it.</p>
+               <p><strong>CSS Tutorials</strong>
+               <p>Our CSS learning area contains a wealth of tutorials to take you from beginner level to proficiency, covering all the fundamentals.</p>
+               <p><strong> CSS Reference</strong></p>
+                <p>Our exhaustive CSS reference for seasoned Web developers describes every property and concept of CSS.  </p>
+        </section>
+        <section class ="main-section" id="Tutorials">
+            <header> Tutorials</header>
+            <p>Our CSS Learning Area features multiple modules that teach CSS from the ground up — no previous knowledge required.</p>
+
+                <p><strong>CSS first steps</strong></p>
+               <p> CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+                <p><strong>CSS building blocks</strong></p>
+                <p>This module carries on where CSS first steps left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, it's time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.</p>
+                
+                <p>The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific disciplines like text styling and CSS layout.</p>
+                <p><strong>Styling text</strong></p>
+                <p>With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals, including setting font, boldness, italics, line and letter spacing, drop shadows, and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.</p>
+                <p><strong>CSS layout</strong></p>
+                <p>At this point we've already looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to place your boxes in the right place in relation to the viewport, and to each other. We have covered the necessary prerequisites so we can now dive deep into CSS layout, looking at different display settings, modern layout tools like flexbox, CSS grid, and positioning, and some of the legacy techniques you might still want to know about.</p>
+                <p><strong>Use CSS to solve common problems</strong></p>
+                This module provides links to sections of content explaining how to use CSS to solve common problems when creating a web page.</p>
+        </section>
+        <section class ="main-section" id ="Reference">
+            <header>Reference</header>
+            <p> CSS reference: This exhaustive reference for seasoned Web developers describes every property and concept of CSS.</p>
+                <h4>CSS key concepts:</h4>
+                <ul type = circle>
+                <li>The syntax and forms of the language</li>
+                <li>Specificity, inheritance, and the Cascade</li>
+                <li>CSS units and values and functional notations</li>
+                <li>Box model and margin collapse</li>
+                <li>The containing block</li>
+                <li>Stacking and block-formatting contexts</li>
+                <li>Initial, computed, used, and actual values</li>
+                <li>CSS shorthand properties</li>
+                <li>CSS Flexible Box Layout</li>
+                <li>CSS Grid Layout</li>
+                <li>CSS selectors</li>
+                <li>Media queries</li>
+                <li>Animation</li> </ul>
+        </section>
+        <section class ="main-section" id="cookbook">
+            <header>Cookbook</header>
+            <p>The CSS layout cookbook aims to bring together recipes for common layout patterns, things you might need to implement in your sites. In addition to providing code you can use as a starting point in your projects, these recipes highlight the different ways layout specifications can be used, and the choices you can make as a developer.</p>
+        
+        </section>
+        <section class ="main-section" id="Tools_for_CSS_Development">
+            <header>Tools for CSS Development </header>
+            <ul type = disc>
+                <li>You can use the W3C CSS Validation Service to check if your CSS is valid. This is an invaluable debugging tool.</li>
+                <li>Firefox Developer Tools lets you view and edit a page's live CSS via the Inspector and Style Editor tools.</li>
+                <li>The Web Developer extension for Firefox lets you track and edit live CSS on watched sites.</li>
+                <li>The Web community has created various other miscellaneous CSS tools for you to use.</li>
+            </ul>
+        </section>
+        <section class ="main-section" id="Meta_Bugs">
+            <header>Meta Bugs</header>
+            <ul type = disc>
+                <li>Firefox: bug 1323667</li>
+            </ul>
+        </section>
+        <section class ="main-section" id="See_Also">
+            <header>See Also</header>
+            <ul type= disc>
+                <li>CSS demos: Get a creative boost by exploring examples of the latest CSS technologies in action.</li>
+                <li>Web languages to which CSS is often applied: HTML, SVG, MathML, XHTML, and XML.
+                    Mozilla technologies that make extensive use of CSS: Firefox, and Thunderbird extensions and themes.</li>
+                <li>Mozilla mailing list</li>
+                <li>Stack Overflow questions about CSS</li>
+            </ul>
+        </section>
+    </main>
+</body>

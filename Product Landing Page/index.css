@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik400 600:wght@300&display=swap');
+  *{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  margin: 50px 0 0;
+  color : white;
+  line-height: 1.5;
+  background-color: black;
+}
+iframe {
+    max-width : 80%;
+    margin-bottom : 30px;
+    align-items : top-right;
+}
+img {
+    max-width : 500px;
+   align-items : right;
+  }
+
+.container {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+section {
+    margin-top: 20px;
+}
+section h2 {
+  text-align : center;
+}
+
+/*nav & header*/
+nav{
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right : 0;
+    left: 0;
+   }
+.nav-link{
+    color: white;
+    padding-right : 10px;
+    text-decoration: none;
+    margin : 10px 30px;
+  }  
+.header-left{
+    width: 60%;
+    padding-right: 20px;
+  } 
+.header-right {
+    display : flex;
+    width: 40%;
+    align-items : center;
+}
+.btn{
+    background-color: darkred;
+    border-radius : 5px;
+    box-shadow :3px 3px 3px solid darkred;
+    color : white;
+    padding : 12px 15px;
+    text-decoration : none;
+    position : relative;
+    display: inline-block;
+    transition : all 0.1s ease;
+   }
+.btn:active{
+    box-shadow :0 0 0 solid darkred;
+    transform : translate(2px , 2px);
+}
+.btn-2{
+    background-color: darkred;
+    border: none;
+    color: white;
+    width : 100px;
+    font-size: 16px;
+    margin : 15px 25px;
+    padding : 15px 15px;
+    text-align: center;
+    position : relative;
+    display: inline-block;
+    transform : all 0.1s ease;
+  }
+  .btn-2:active{
+    transform : none;
+  }
+/*feature section*/
+.feature{
+    color: white;
+    width : 30%;
+    text-align: center;
+    border-radius:10px;
+    background-color: darkred;
+    margin : 0 1.66%;
+    padding: 10px;
+  } 
+  .feature h2{
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .feature p{
+    font-size: 15px;
+    line-height : 30px;
+  }
+.feature i {
+    font-size : 30px;
+    color: white;
+    margin-top : 2px;
+}
+#features{
+    color: white;
+    text-align: center;
+  }
+/*form section*/
+form {
+    margin-bottom: 40px ;
+    width : 100%;
+}
+
+form .flex {
+    display : flex;
+    flex-wrap: wrap;
+}
+  form input[type="email"] {
+    background-color: white;
+    color : white;
+    border:0;
+    width: 100%;
+    margin-right: 10px;
+    padding : 10px 10spx;
+    flex: 1;
+    display: inline-block;
+    transition: all 0.1s ease;;
+  } 
+/*footer styling*/
+footer {
+    background-color: darkred;
+    padding: 10px;
+    margin:0;
+    margin-top: 20px ;
+    text-align: center;
+    color: white;
+  }
+footer .fa-heart {
+    color: red;
+}
+@media(max-width : 480px) {
+    .header-left , .header-right {
+        width : 100%;
+    }
+ 
+    .header-right {
+     order: 0;
+    }
+    .header-left {
+     order : 1 ;
+     padding-left: 20px;
+     text-align: center;
+    }
+    .header-left h1 {
+        display : none;
+    }
+    .feature {
+        margin : 10px;
+        width: 100%;
+    }
+    .flex input, .flex .btn-2 {
+        width : 100%;
+        margin : 5px 10px;
+    }
+}
+
